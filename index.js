@@ -18,21 +18,7 @@ app.post("/api/v1/quiz",(req,res)=>{
   }
 })
 
-// app.get('/', function (req, res) {
-//   res.send('<h1>トップページ</h1>')
-// })
-
-// app.get('/about', function (req, res) {
-//   res.send('Aboutページ')
-// })
-
-// app.get('/api/v1/users', function (req, res) {
-//   res.send({
-//     name:"Mike",
-//     age:30,
-//     hobby:"baseball"
-//   })
-// })
-app.listen(3000,()=>{
+const PORT = process.env.PORT || 3000;
+app.listen(PORT,()=>{
   console.log("I'm running")
 })
